@@ -115,6 +115,12 @@ function Navbar() {
           >
             {t("resources")}
           </Link>
+          <Link
+            to="/dashboard"
+            className="hover:text-blue-200 transition duration-300"
+          >
+            {t("Dashboard")}
+          </Link>
           <select
             onChange={(e) => changeLanguage(e.target.value)}
             className="bg-blue-800/50 text-white p-2 rounded-lg border border-blue-600 hover:bg-blue-800 transition"
@@ -162,6 +168,13 @@ function Navbar() {
             onClick={toggleMenu}
           >
             {t("resources")}
+          </Link>
+          <Link
+            to="/dashboard"
+            className="block text-lg hover:text-blue-200 transition"
+            onClick={toggleMenu}
+          >
+            {t("Dashboard")}
           </Link>
           <select
             onChange={(e) => changeLanguage(e.target.value)}

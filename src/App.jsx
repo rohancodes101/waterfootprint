@@ -34,7 +34,9 @@ import Footer from "./components/Footer";
 import HomePage from "./pages/HomePage";
 import CalculatePage from "./pages/CalculatePage";
 import ResourcesPage from "./pages/ResourcesPage";
+
 import "./i18n";
+import Dashboard from "./pages/Dashboard";
 
 function App() {
   return (
@@ -46,6 +48,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/calculate" element={<CalculatePage />} />
             <Route path="/resources" element={<ResourcesPage />} />
+            <Route path="/dashboard" element={<Dashboard />} />
           </Routes>
         </main>
         <Footer />
@@ -55,3 +58,12 @@ function App() {
 }
 
 export default App;
+
+
+
+
+
+
+
+
+
